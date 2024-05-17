@@ -20,3 +20,10 @@
 
     - name: Install Semaphore
       command: sudo snap install semaphore
+
+
+    - name: Service semaphore enabled and started
+      service:
+        name: Semaphore
+        enabled: yes
+        state: started
